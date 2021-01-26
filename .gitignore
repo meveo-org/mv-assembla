@@ -1,3 +1,5 @@
 target/
 .settings/
+.vscode/
 .project
+src/test/java/org/meveo/assembla/AssemblaParams.java
