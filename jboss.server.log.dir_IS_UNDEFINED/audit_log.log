@@ -1,0 +1,207 @@
+21842 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: default
+22009 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+22023 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://github.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+22227 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://github.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+22245 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {s}->https://github.com:443
+22483 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to github.com/13.250.177.223:443
+22487 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Connecting socket to github.com/13.250.177.223:443 with timeout 0
+23405 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+23408 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+23409 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Starting handshake
+28841 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Secure session established
+28842 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+28848 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+28853 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  peer principal: CN=github.com, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+28854 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  peer alternative names: [github.com, www.github.com]
+28858 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  issuer principal: CN=DigiCert SHA2 High Assurance Server CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+28892 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 172.17.166.165:47974<->13.250.177.223:443
+28894 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request GET /smichea/assembla-api/releases/download/v0.1/assembla-api-0.1.jar HTTP/1.1
+28895 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+28901 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+28914 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /smichea/assembla-api/releases/download/v0.1/assembla-api-0.1.jar HTTP/1.1
+28914 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: github.com
+28915 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+28916 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/11.0.9.1)
+28917 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /smichea/assembla-api/releases/download/v0.1/assembla-api-0.1.jar HTTP/1.1[\r][\n]"
+28918 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: github.com[\r][\n]"
+28919 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+28920 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/11.0.9.1)[\r][\n]"
+28921 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+29477 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 302 Found[\r][\n]"
+29483 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 27 Jan 2021 06:48:33 GMT[\r][\n]"
+29489 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: text/html; charset=utf-8[\r][\n]"
+29493 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: GitHub.com[\r][\n]"
+29497 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Status: 302 Found[\r][\n]"
+29504 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding[\r][\n]"
+29518 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/332935530/5953f480-6095-11eb-8745-fb7e188b582b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210127T064833Z&X-Amz-Expires=300&X-Amz-Signature=5df1466431b2826359063c9c34272b13c52cb98e56b55116967e4ed3a9905c98&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=332935530&response-content-disposition=attachment%3B%20filename%3Dassembla-api-0.1.jar&response-content-type=application%2Foctet-stream[\r][\n]"
+29522 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache[\r][\n]"
+29526 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]"
+29528 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+29531 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+29533 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+29536 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Referrer-Policy: no-referrer-when-downgrade[\r][\n]"
+29538 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expect-CT: max-age=2592000, report-uri="https://api.github.com/_private/browser/errors"[\r][\n]"
+29544 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-product"
+29583 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "ion-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com online.visualstudio.com/api/v1/locations; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js[\r][\n]"
+29588 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: _gh_sess=E4aKIbnkdFlaLjtHcLIVUaOxiweNovMXsvjhDojylZUY463Lb%2FCUi%2B%2B%2BpBCZjo4jaICQ02mMCJj%2FTk206eowqYh0pycDzBoNOHCwNsxnduUR9RDzKlzIhvSq0bnRLBM3VgP49hWbIdWZC2Sy3MXU8ZQCP0NsW8RqpFfVXCFCAuUw2wE6PrOa7TWbcJlup0FrXD5maPcmbV2XCVm3W5CFwr3kPCFnEvF%2FVYTA9ApBSZLTqjGrdsTIiGGBOsExHmtSs20TDvWfHKFqOaV9l7b%2FaA%3D%3D--tsuazYy6afAeZt21--%2FCiIF2HZBjtGReUX6QyEzw%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax[\r][\n]"
+29589 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: _octo=GH1.1.502478257.1611730113; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:48:33 GMT; Secure; SameSite=Lax[\r][\n]"
+29591 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:48:33 GMT; HttpOnly;"
+29594 [main] DEBUG org.apache.http.wire - http-outgoing-0 << " Secure; SameSite=Lax[\r][\n]"
+29595 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 646[\r][\n]"
+29596 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-GitHub-Request-Id: CECE:37E6:20AC18:254ABA:60110CBC[\r][\n]"
+29596 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+29603 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "<html><body>You are being <a href="https://github-production-release-asset-2e65be.s3.amazonaws.com/332935530/5953f480-6095-11eb-8745-fb7e188b582b?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210127%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210127T064833Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=5df1466431b2826359063c9c34272b13c52cb98e56b55116967e4ed3a9905c98&amp;X-Amz-SignedHeaders=host&amp;actor_id=0&amp;key_id=0&amp;repo_id=332935530&amp;response-content-disposition=attachment%3B%20filename%3Dassembla-api-0.1.jar&amp;response-content-type=application%2Foctet-stream">redirected</a>.</body></html>"
+29609 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 302 Found
+29610 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 27 Jan 2021 06:48:33 GMT
+29611 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: text/html; charset=utf-8
+29612 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Server: GitHub.com
+29612 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Status: 302 Found
+29613 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding
+29613 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/332935530/5953f480-6095-11eb-8745-fb7e188b582b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210127T064833Z&X-Amz-Expires=300&X-Amz-Signature=5df1466431b2826359063c9c34272b13c52cb98e56b55116967e4ed3a9905c98&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=332935530&response-content-disposition=attachment%3B%20filename%3Dassembla-api-0.1.jar&response-content-type=application%2Foctet-stream
+29614 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache
+29615 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+29615 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: deny
+29616 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+29617 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+29617 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Referrer-Policy: no-referrer-when-downgrade
+29618 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expect-CT: max-age=2592000, report-uri="https://api.github.com/_private/browser/errors"
+29619 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com online.visualstudio.com/api/v1/locations; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js
+29619 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: _gh_sess=E4aKIbnkdFlaLjtHcLIVUaOxiweNovMXsvjhDojylZUY463Lb%2FCUi%2B%2B%2BpBCZjo4jaICQ02mMCJj%2FTk206eowqYh0pycDzBoNOHCwNsxnduUR9RDzKlzIhvSq0bnRLBM3VgP49hWbIdWZC2Sy3MXU8ZQCP0NsW8RqpFfVXCFCAuUw2wE6PrOa7TWbcJlup0FrXD5maPcmbV2XCVm3W5CFwr3kPCFnEvF%2FVYTA9ApBSZLTqjGrdsTIiGGBOsExHmtSs20TDvWfHKFqOaV9l7b%2FaA%3D%3D--tsuazYy6afAeZt21--%2FCiIF2HZBjtGReUX6QyEzw%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+29620 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: _octo=GH1.1.502478257.1611730113; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:48:33 GMT; Secure; SameSite=Lax
+29621 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:48:33 GMT; HttpOnly; Secure; SameSite=Lax
+29622 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 646
+29622 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-GitHub-Request-Id: CECE:37E6:20AC18:254ABA:60110CBC
+29673 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+29740 [main] DEBUG o.a.h.c.p.ResponseProcessCookies - Cookie accepted [_gh_sess="E4aKIbnkdFlaLjtHcLIVUaOxiweNovMXsvjhDojylZUY463Lb%2FCUi%2B%2B%2BpBCZjo4jaICQ02mMCJj%2FTk206eowqYh0py...", version:0, domain:github.com, path:/, expiry:null]
+30140 [main] WARN  o.a.h.c.p.ResponseProcessCookies - Invalid cookie header: "Set-Cookie: _octo=GH1.1.502478257.1611730113; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:48:33 GMT; Secure; SameSite=Lax". Invalid 'expires' attribute: Thu, 27 Jan 2022 06:48:33 GMT
+30154 [main] WARN  o.a.h.c.p.ResponseProcessCookies - Invalid cookie header: "Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:48:33 GMT; HttpOnly; Secure; SameSite=Lax". Invalid 'expires' attribute: Thu, 27 Jan 2022 06:48:33 GMT
+327 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: default
+332 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+332 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://github.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+338 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://github.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+339 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {s}->https://github.com:443
+443 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to github.com/52.74.223.119:443
+444 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Connecting socket to github.com/52.74.223.119:443 with timeout 0
+603 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+604 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+604 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Starting handshake
+889 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Secure session established
+889 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+890 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+890 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  peer principal: CN=github.com, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+890 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  peer alternative names: [github.com, www.github.com]
+890 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  issuer principal: CN=DigiCert SHA2 High Assurance Server CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+892 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 172.17.166.165:58620<->52.74.223.119:443
+892 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request GET /smichea/assembla-api/releases/download/v0.1/assembla-api-0.1.jar HTTP/1.1
+892 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+893 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+893 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /smichea/assembla-api/releases/download/v0.1/assembla-api-0.1.jar HTTP/1.1
+893 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: github.com
+893 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+893 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/11.0.9.1)
+893 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /smichea/assembla-api/releases/download/v0.1/assembla-api-0.1.jar HTTP/1.1[\r][\n]"
+894 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: github.com[\r][\n]"
+894 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+894 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/11.0.9.1)[\r][\n]"
+894 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+1361 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 302 Found[\r][\n]"
+1361 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Wed, 27 Jan 2021 06:52:04 GMT[\r][\n]"
+1362 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: text/html; charset=utf-8[\r][\n]"
+1362 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: GitHub.com[\r][\n]"
+1362 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Status: 302 Found[\r][\n]"
+1362 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding[\r][\n]"
+1363 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/332935530/5953f480-6095-11eb-8745-fb7e188b582b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210127T065203Z&X-Amz-Expires=300&X-Amz-Signature=dccdfefa3fc348dade35a905ccd485205294d3d57f1a026b8828e1cc6e24afbb&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=332935530&response-content-disposition=attachment%3B%20filename%3Dassembla-api-0.1.jar&response-content-type=application%2Foctet-stream[\r][\n]"
+1363 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: no-cache[\r][\n]"
+1363 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]"
+1363 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+1363 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+1364 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+1364 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Referrer-Policy: no-referrer-when-downgrade[\r][\n]"
+1364 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Expect-CT: max-age=2592000, report-uri="https://api.github.com/_private/browser/errors"[\r][\n]"
+1364 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-product"
+1370 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "ion-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com online.visualstudio.com/api/v1/locations; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js[\r][\n]"
+1370 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: _gh_sess=2CKrFtiMDxzeR%2BqQ28Vh7BSQ7HgcmHoDaR%2FP0vLYiBIX2Aq7sivmy8UKPuFNBnZxjXEoLBBrutUFOzKKuZ0k%2F1MPxN7xzqUIMfGiPJ52X2bgf2HO2ml2fdSp5VwDJdgPJWnvxyYrqFNneAnXFMpgDSjzAQvkj%2FiYDBxi9THBkMRFFDfdF4%2BAYdRgA%2FW2d9EPpb8GL9fKFUT%2Bjp%2FTKg%2FUbsAYRvJfushaLyYOqKaV1heiJiUTkM1TL%2FtSPeNeKrigJ9qYcPS1RhhkBs5NyHjNKQ%3D%3D--jiTnfGkVStio0VKo--lsb22ESeEk5hSuHK%2F0WdhQ%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax[\r][\n]"
+1370 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: _octo=GH1.1.615131176.1611730323; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:52:03 GMT; Secure; SameSite=Lax[\r][\n]"
+1370 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:52:03 GMT; Htt"
+1372 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "pOnly; Secure; SameSite=Lax[\r][\n]"
+1372 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 646[\r][\n]"
+1372 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "X-GitHub-Request-Id: CEAE:4911:443383:4E2E32:60110D93[\r][\n]"
+1372 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+1372 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "<html><body>You are being <a href="https://github-production-release-asset-2e65be.s3.amazonaws.com/332935530/5953f480-6095-11eb-8745-fb7e188b582b?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210127%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210127T065203Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=dccdfefa3fc348dade35a905ccd485205294d3d57f1a026b8828e1cc6e24afbb&amp;X-Amz-SignedHeaders=host&amp;actor_id=0&amp;key_id=0&amp;repo_id=332935530&amp;response-content-disposition=attachment%3B%20filename%3Dassembla-api-0.1.jar&amp;response-content-type=application%2Foctet-stream">redirected</a>.</body></html>"
+1374 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 302 Found
+1375 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Wed, 27 Jan 2021 06:52:04 GMT
+1375 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: text/html; charset=utf-8
+1375 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Server: GitHub.com
+1375 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Status: 302 Found
+1375 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding
+1375 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Location: https://github-production-release-asset-2e65be.s3.amazonaws.com/332935530/5953f480-6095-11eb-8745-fb7e188b582b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210127T065203Z&X-Amz-Expires=300&X-Amz-Signature=dccdfefa3fc348dade35a905ccd485205294d3d57f1a026b8828e1cc6e24afbb&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=332935530&response-content-disposition=attachment%3B%20filename%3Dassembla-api-0.1.jar&response-content-type=application%2Foctet-stream
+1375 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: no-cache
+1375 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+1375 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Frame-Options: deny
+1375 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+1376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+1376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Referrer-Policy: no-referrer-when-downgrade
+1376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Expect-CT: max-age=2592000, report-uri="https://api.github.com/_private/browser/errors"
+1376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com online.visualstudio.com/api/v1/locations; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js
+1376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: _gh_sess=2CKrFtiMDxzeR%2BqQ28Vh7BSQ7HgcmHoDaR%2FP0vLYiBIX2Aq7sivmy8UKPuFNBnZxjXEoLBBrutUFOzKKuZ0k%2F1MPxN7xzqUIMfGiPJ52X2bgf2HO2ml2fdSp5VwDJdgPJWnvxyYrqFNneAnXFMpgDSjzAQvkj%2FiYDBxi9THBkMRFFDfdF4%2BAYdRgA%2FW2d9EPpb8GL9fKFUT%2Bjp%2FTKg%2FUbsAYRvJfushaLyYOqKaV1heiJiUTkM1TL%2FtSPeNeKrigJ9qYcPS1RhhkBs5NyHjNKQ%3D%3D--jiTnfGkVStio0VKo--lsb22ESeEk5hSuHK%2F0WdhQ%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+1376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: _octo=GH1.1.615131176.1611730323; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:52:03 GMT; Secure; SameSite=Lax
+1376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:52:03 GMT; HttpOnly; Secure; SameSite=Lax
+1376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 646
+1376 [main] DEBUG org.apache.http.headers - http-outgoing-0 << X-GitHub-Request-Id: CEAE:4911:443383:4E2E32:60110D93
+1385 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+1396 [main] DEBUG o.a.h.c.p.ResponseProcessCookies - Cookie accepted [_gh_sess="2CKrFtiMDxzeR%2BqQ28Vh7BSQ7HgcmHoDaR%2FP0vLYiBIX2Aq7sivmy8UKPuFNBnZxjXEoLBBrutUFOzKKuZ0k%2F1MPxN7xzq...", version:0, domain:github.com, path:/, expiry:null]
+1408 [main] WARN  o.a.h.c.p.ResponseProcessCookies - Invalid cookie header: "Set-Cookie: _octo=GH1.1.615131176.1611730323; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:52:03 GMT; Secure; SameSite=Lax". Invalid 'expires' attribute: Thu, 27 Jan 2022 06:52:03 GMT
+1409 [main] WARN  o.a.h.c.p.ResponseProcessCookies - Invalid cookie header: "Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Thu, 27 Jan 2022 06:52:03 GMT; HttpOnly; Secure; SameSite=Lax". Invalid 'expires' attribute: Thu, 27 Jan 2022 06:52:03 GMT
+12110 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: default
+12114 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+12116 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://github-production-release-asset-2e65be.s3.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 1 of 50]
+12118 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {s}->https://github-production-release-asset-2e65be.s3.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 2 of 50]
+12120 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Opening connection {s}->https://github-production-release-asset-2e65be.s3.amazonaws.com:443
+12329 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to github-production-release-asset-2e65be.s3.amazonaws.com/52.216.154.12:443
+12331 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Connecting socket to github-production-release-asset-2e65be.s3.amazonaws.com/52.216.154.12:443 with timeout 0
+12626 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+12630 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+12631 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Starting handshake
+16839 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory - Secure session established
+16840 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+16843 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+16847 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  peer principal: CN=*.s3.amazonaws.com, O="Amazon.com, Inc.", L=Seattle, ST=Washington, C=US
+16849 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  peer alternative names: [*.s3.amazonaws.com, s3.amazonaws.com]
+16852 [main] DEBUG o.a.h.c.s.SSLConnectionSocketFactory -  issuer principal: CN=DigiCert Baltimore CA-2 G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+16856 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 172.17.166.165:33132<->52.216.154.12:443
+16857 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Executing request GET /332935530/5953f480-6095-11eb-8745-fb7e188b582b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210127T065203Z&X-Amz-Expires=300&X-Amz-Signature=dccdfefa3fc348dade35a905ccd485205294d3d57f1a026b8828e1cc6e24afbb&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=332935530&response-content-disposition=attachment%3B%20filename%3Dassembla-api-0.1.jar&response-content-type=application%2Foctet-stream HTTP/1.1
+16858 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+16859 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+16861 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> GET /332935530/5953f480-6095-11eb-8745-fb7e188b582b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210127T065203Z&X-Amz-Expires=300&X-Amz-Signature=dccdfefa3fc348dade35a905ccd485205294d3d57f1a026b8828e1cc6e24afbb&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=332935530&response-content-disposition=attachment%3B%20filename%3Dassembla-api-0.1.jar&response-content-type=application%2Foctet-stream HTTP/1.1
+16862 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Host: github-production-release-asset-2e65be.s3.amazonaws.com
+16863 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+16864 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.2 (Java/11.0.9.1)
+16870 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "GET /332935530/5953f480-6095-11eb-8745-fb7e188b582b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210127T065203Z&X-Amz-Expires=300&X-Amz-Signature=dccdfefa3fc348dade35a905ccd485205294d3d57f1a026b8828e1cc6e24afbb&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=332935530&response-content-disposition=attachment%3B%20filename%3Dassembla-api-0.1.jar&response-content-type=application%2Foctet-stream HTTP/1.1[\r][\n]"
+16871 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Host: github-production-release-asset-2e65be.s3.amazonaws.com[\r][\n]"
+16872 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+16873 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/11.0.9.1)[\r][\n]"
+16874 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+17213 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+17218 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "x-amz-id-2: g+6vkeviGDboLFZWA70/kBsVOR7+sylvUeH6uiuS8c7ZOGGdV7h2xE4/FY5G9/z8Y2SkyWjAsWE=[\r][\n]"
+17221 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "x-amz-request-id: 22416CCDD5509C1C[\r][\n]"
+17224 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Date: Wed, 27 Jan 2021 06:52:20 GMT[\r][\n]"
+17228 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Last-Modified: Wed, 27 Jan 2021 03:46:55 GMT[\r][\n]"
+17232 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "ETag: "ffcb9ae6b78c8f411fd8e5c097880e4f"[\r][\n]"
+17241 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Disposition: attachment; filename=assembla-api-0.1.jar[\r][\n]"
+17244 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Accept-Ranges: bytes[\r][\n]"
+17245 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Type: application/octet-stream[\r][\n]"
+17247 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Length: 164862[\r][\n]"
+17248 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Server: AmazonS3[\r][\n]"
+17249 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+17253 [main] DEBUG org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 OK
+17254 [main] DEBUG org.apache.http.headers - http-outgoing-1 << x-amz-id-2: g+6vkeviGDboLFZWA70/kBsVOR7+sylvUeH6uiuS8c7ZOGGdV7h2xE4/FY5G9/z8Y2SkyWjAsWE=
+17255 [main] DEBUG org.apache.http.headers - http-outgoing-1 << x-amz-request-id: 22416CCDD5509C1C
+17256 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Date: Wed, 27 Jan 2021 06:52:20 GMT
+17257 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Last-Modified: Wed, 27 Jan 2021 03:46:55 GMT
+17258 [main] DEBUG org.apache.http.headers - http-outgoing-1 << ETag: "ffcb9ae6b78c8f411fd8e5c097880e4f"
+17259 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Disposition: attachment; filename=assembla-api-0.1.jar
+17260 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Accept-Ranges: bytes
+17261 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Type: application/octet-stream
+17262 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Length: 164862
+17264 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Server: AmazonS3
+17269 [main] DEBUG o.a.h.impl.execchain.MainClientExec - Connection can be kept alive indefinitely

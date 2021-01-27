@@ -1,0 +1,28 @@
+[ {
+  "active" : true,
+  "code" : "mv-assembla",
+  "description" : "assembla module",
+  "license" : "GPL",
+  "script" : {
+    "active" : true,
+    "code" : "org.meveo.assembla.AssemblaInstallScript",
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "generateOutputs" : false,
+    "type" : "JAVA",
+    "transactionType" : "SAME",
+    "script" : "package org.meveo.assembla;\r\n\r\nimport java.io.File;\r\nimport java.io.FileOutputStream;\r\nimport java.io.InputStream;\r\nimport java.io.OutputStream;\r\nimport java.util.Map;\r\n\r\nimport javax.ws.rs.client.Client;\r\nimport javax.ws.rs.client.ClientBuilder;\r\nimport javax.ws.rs.client.WebTarget;\r\nimport javax.ws.rs.core.Response;\r\n\r\nimport org.meveo.admin.exception.BusinessException;\r\nimport org.meveo.service.config.impl.MavenConfigurationService;\r\nimport org.meveo.service.script.module.ModuleScript;\r\n\r\npublic class AssemblaInstallScript extends ModuleScript {\r\n    \r\n    static final String REPO_NAME=\"smichea\";\r\n    static final String GROUP_ID=\"com.assembla\";\r\n    static final String ARTIFACT_ID=\"assembla-api\";\r\n    static final String VERSION=\"0.1\";\r\n    static final String CLASSIFIER=\"\";\r\n    static final String FILENAME = \"assembla-api-0.1.jar\";\r\n\r\n    MavenConfigurationService mavenConfigurationService = getCDIBean(MavenConfigurationService.class);\r\n\r\n    protected InputStream  downloadJar(){\r\n        Client client = ClientBuilder.newClient();\r\n        WebTarget webTarget = client.target(\"https://github.com/\"+REPO_NAME+\"/\"+ARTIFACT_ID+\"/releases/download/v\"+VERSION+\"/\"+FILENAME);\r\n        Response response = webTarget.request().get();\r\n        if(response.getStatus()==302){\r\n            String location = response.getHeaderString(\"Location\");\r\n            response = client.target(location).request().get();\r\n        }\r\n        if(response.getStatus()==200){\r\n            InputStream in = response.readEntity(InputStream.class);\r\n            return in;\r\n        }\r\n        return null;\r\n    }\r\n\r\n    protected void uploadMavenArtifact(InputStream inputStream, File file) throws BusinessException{\r\n\t\ttry {\r\n\t\t\tOutputStream outputStream = new FileOutputStream(file);\r\n\t\t\tint read = 0;\r\n\t\t\tbyte[] data = new byte[1024];\r\n\r\n\t\t\twhile ((read = inputStream.read(data)) != -1) {\r\n\t\t\t\toutputStream.write(data, 0, read);\r\n\t\t\t}\r\n\r\n\t\t\tinputStream.close();\r\n\t\t\toutputStream.flush();\r\n\t\t\toutputStream.close();\r\n\r\n\t\t} catch (Exception e) {\r\n\t\t\tthrow new BusinessException(\"Error uploading file: \" + FILENAME + \". \" + e.getMessage());\r\n\t\t}\r\n\t}\r\n    \r\n    protected boolean artifactExist(){\r\n        boolean result=false;\r\n        return result;\r\n    }\r\n\r\n    protected void updloadArtifact() throws BusinessException{\r\n        String filePath = mavenConfigurationService.createDirectory(GROUP_ID, ARTIFACT_ID, VERSION, CLASSIFIER);\r\n\t\tfilePath = filePath + File.separator + mavenConfigurationService.buildArtifactName(ARTIFACT_ID, VERSION, CLASSIFIER);\r\n        File file =new File(filePath);\r\n        if(!file.exists()){\r\n            InputStream in = downloadJar();\r\n            uploadMavenArtifact(in,file);\r\n        }\r\n    }\r\n\r\n    public void preInstallModule(Map<String, Object> methodContext) throws BusinessException {\r\n        updloadArtifact();\r\n    }\r\n\r\n    public void execute(Map<String, Object> methodContext) throws BusinessException {\r\n        updloadArtifact();\r\n    }\r\n}\r\n",
+    "executionRoles" : [ ],
+    "sourcingRoles" : [ ],
+    "mavenDependencies" : [ ],
+    "importScriptInstances" : [ ]
+  },
+  "currentVersion" : "0.1",
+  "meveoVersionBase" : "6.14.0",
+  "transient" : true,
+  "codeOnly" : false,
+  "inDraft" : true,
+  "moduleItems" : [ ],
+  "moduleDependencies" : [ ],
+  "moduleFiles" : [ ]
+} ]

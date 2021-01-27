@@ -8,7 +8,7 @@ import com.assembla.client.AssemblaResource;
 
 import org.meveo.service.script.Script;
 
-public class AssemblaRetrieveTicketsScript extends Script{
+public class AssemblaRetrieveTicketsScript extends Script {
 
     private String key;
     private String secret;
